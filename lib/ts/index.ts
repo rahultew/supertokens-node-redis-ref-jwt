@@ -1,3 +1,3 @@
-// export * from "./session";
+export * from "./session";
 
-// export { AuthError as Error } from "./error";
+export { AuthError as Error } from "./error";
