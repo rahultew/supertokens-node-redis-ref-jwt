@@ -1,6 +1,6 @@
-import * as express from 'express';
+import * as express from "express";
 
-import Config from './config';
+import Config from "./config";
 import {
     attachAccessTokenToCookie,
     attachIdRefreshTokenToCookie,
@@ -11,11 +11,11 @@ import {
     getIdRefreshTokenFromCookie,
     getRefreshTokenFromCookie,
     setAntiCsrfTokenInHeadersIfRequired,
-    setOptionsAPIHeader,
-} from './cookieAndHeaders';
-import { AuthError, generateError } from './error';
-import { TypeInputConfig } from './helpers/types';
-import * as SessionFunctions from './session';
+    setOptionsAPIHeader
+} from "./cookieAndHeaders";
+import { AuthError, generateError } from "./error";
+import { TypeInputConfig } from "./helpers/types";
+import * as SessionFunctions from "./session";
 
 export { AuthError as Error } from "./error";
 

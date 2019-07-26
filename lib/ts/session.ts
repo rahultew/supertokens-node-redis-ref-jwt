@@ -1,12 +1,11 @@
-import { createNewAccessToken, getInfoFromAccessToken, init as accessTokenInit } from './accessToken';
-import Config from './config';
-import CronJob from './cronjobs';
-import { AuthError, generateError } from './error';
-import { MongoDriver } from './helpers/mongoNew';
-import { TypeInputConfig } from './helpers/types';
-import { assertUserIdHasCorrectType, generateSessionHandle, generateUUID, hash } from './helpers/utils';
-import { createNewRefreshToken, getInfoFromRefreshToken, init as refreshTokenInit } from './refreshToken';
-
+import { createNewAccessToken, getInfoFromAccessToken, init as accessTokenInit } from "./accessToken";
+import Config from "./config";
+import CronJob from "./cronjobs";
+import { AuthError, generateError } from "./error";
+import { MongoDriver } from "./helpers/mongoNew";
+import { TypeInputConfig } from "./helpers/types";
+import { assertUserIdHasCorrectType, generateSessionHandle, generateUUID, hash } from "./helpers/utils";
+import { createNewRefreshToken, getInfoFromRefreshToken, init as refreshTokenInit } from "./refreshToken";
 
 /**
  * @description: to be called by user of the library. This initiates all the modules necessary for this library to work.
